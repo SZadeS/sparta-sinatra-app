@@ -8,3 +8,7 @@ body{
 a{
   color: green;
 }
+
+.topLine{
+  display: inline-block;
+}

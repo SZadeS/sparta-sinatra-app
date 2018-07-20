@@ -1,6 +1,11 @@
-<div id ="indexHeading">
-  <h1>Big Dave's Virtual Car Showroom</h1>
-  <div><img src="images/cartoon" alt=""></div>
+<div id ="container topLine">
+  <div class="row">
+    <div class = "col-md-6">
+      <h1>Big Dave's Virtual Car Showroom</h1>
+    </div>
+    <div class="col-md-offset-5 col-md-1"><img src="images/cartoon.jpg" alt="">
+    </div>
+  </div>
 </div>
 
 <% @cars.each do |car| %>
@@ -12,7 +17,7 @@
     <p><%= car.description %></p>
   </div>
   <div class="col-md-6">
-    <img src="/images/@car.make" alt="">
+    <img src="images/<%= car.name %>.jpg" alt="">
   </div>
 
   </div>
