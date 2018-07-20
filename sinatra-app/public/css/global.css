@@ -1,0 +1,10 @@
+body{
+  font-family: "Oswald", sans-serif;
+  padding: 150px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+a{
+  color: green;
+}

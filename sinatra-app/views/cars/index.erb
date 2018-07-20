@@ -1,0 +1,17 @@
+<div id ="indexHeading">
+  <h1>Big Dave's Virtual Car Showroom</h1>
+  <div><img src="/images/cartoon" alt=""></div>
+</div>
+
+<% @cars.each do |car| %>
+<div>
+  <div class="">
+    <h1><%= car.make %></h1>
+    <p><%= car.name %></p>
+    <p><%= car.description %></p>
+  </div>
+  <div>
+    <img src="/images/@car.make" alt="">
+  </div>
+</div>
+<% end %>

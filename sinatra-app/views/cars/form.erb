@@ -1,0 +1,29 @@
+<head>
+<link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+<form class="" action="/<%= @car.id %>" method="POST">
+  <div class="">
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Name of car" value="<%= @car.name %>">
+  </div>
+  <div class="">
+    <label>Make</label>
+    <input type="text" name="make" placeholder="Make of car" value="<%= @car.make %>">
+  </div>
+
+  <div class="">
+    <label>Description</label>
+    <textarea name="description" placeholder="Describe the car"><%= @car.description %></textarea>
+  </div>
+
+  <div class="">
+    <input type="submit" name="" value="Save Post">
+  </div>
+
+  <% if(@car.id != "") %>
+    <input type="hidden" name="_method" value="PUT">
+  <% end %>
+
+</form>
+</body>

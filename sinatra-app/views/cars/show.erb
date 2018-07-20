@@ -1,0 +1,11 @@
+
+  <h1><%= @car.make %></h1>
+  <p><%= @car.name %></p>
+  <p><%= @car.description %></p>
+  <form class="" action="/<%= @car.id %>/edit" method="GET">
+    <input type="submit" value="Edit">
+  </form>
+  <form action="/<%= @car.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete">
+  </form>
