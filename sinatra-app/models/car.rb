@@ -36,7 +36,7 @@ class Car
 
     cars = make_conn.exec(sql)
 
-    return self.hydrate cars[0]
+    return self.hydrate cars[i]
   end
 
   def save

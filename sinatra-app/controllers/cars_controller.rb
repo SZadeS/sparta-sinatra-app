@@ -61,6 +61,8 @@ get "/:id/edit" do
   id = params[:id].to_i
   @car = Car.find(id)
   erb :"cars/edit"
+  # am i missing the line to add the edited version to index page? eg car = edited car
+  # redirect "/"
 end
 
 # UPDATE
